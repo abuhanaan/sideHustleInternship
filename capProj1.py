@@ -14,7 +14,12 @@ def checkPassMarks():
     min_score = 0
 
     for i in range(len(lst)):
-        if average_score > 60:
+        """
+        I have decided to check if the pass is greater than 65 intead of 60 because
+        a student can not pass if their score is 5 points below the class average,
+        so if the class average between 60 and 64, then the minimum score can only be 60
+        """
+        if average_score > 65:
             min_score = average_score
         else:
             min_score = 60
