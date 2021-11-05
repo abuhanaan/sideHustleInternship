@@ -18,7 +18,7 @@ def checkPassMarks():
             min_score = average_score
         else:
             min_score = 60
-        if lst[i] > min_score:
+        if lst[i] >= min_score:
             print("Student {} passed - his score is {} and pass mark is {}".format(i+1, lst[i], min_score))
         else:
             print("Student {} failed - his score is {} and pass mark is {}".format(i+1, lst[i], min_score))
