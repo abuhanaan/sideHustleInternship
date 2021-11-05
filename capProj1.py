@@ -20,7 +20,7 @@ def checkPassMarks():
         so if the class average between 60 and 64, then the minimum score can only be 60
         """
         if average_score > 65:
-            min_score = average_score
+            min_score = average_score - 5
         else:
             min_score = 60
         if lst[i] >= min_score:
